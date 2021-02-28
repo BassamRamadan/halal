@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidKufi-Regular.ttf">
+            <string>DroidArabicKufi</string>
+        </array>
+        <array key="DroidNaskh-Bold.ttf">
+            <string>DroidArabicNaskh-Bold</string>
+        </array>
+        <array key="DroidNaskh-Regular.ttf">
+            <string>DroidArabicNaskh</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--إضافة الحسابات البنكية-->
+        <scene sceneID="BBS-E5-0W5">
+            <objects>
+                <viewController title="إضافة الحسابات البنكية" id="wOo-dt-Jox" customClass="AddBankAccounts" customModule="مزهول_للذبائح" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eKJ-gM-hOk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TU6-YQ-jFK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbo-en-nGW">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dxk-EH-NQw">
+                                                <rect key="frame" x="20" y="20" width="374" height="660"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0g-7x-Fdy" customClass="ViewShadow" customModule="مزهول_للذبائح" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="110"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" image="ic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="QRd-OC-4wO">
+                                                                <rect key="frame" x="330" y="30" width="24" height="24"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="يمكنك إضافة أكثر من حساب بنكى فقط أملىء النموذج ثم قم بالضغط على زر المزيد" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgI-6s-pEk">
+                                                                <rect key="frame" x="10" y="20" width="300" height="53.5"/>
+                                                                <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="14"/>
+                                                                <color key="textColor" name="LightText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="pale yellow"/>
+                                                        <constraints>
+                                                            <constraint firstItem="OgI-6s-pEk" firstAttribute="leading" secondItem="c0g-7x-Fdy" secondAttribute="leading" constant="10" id="4eG-My-Wv3"/>
+                                                            <constraint firstAttribute="trailing" secondItem="QRd-OC-4wO" secondAttribute="trailing" constant="20" id="8IY-04-gbF"/>
+                                                            <constraint firstItem="OgI-6s-pEk" firstAttribute="top" secondItem="c0g-7x-Fdy" secondAttribute="top" constant="20" id="R9L-TF-se7"/>
+                                                            <constraint firstItem="QRd-OC-4wO" firstAttribute="top" secondItem="c0g-7x-Fdy" secondAttribute="top" constant="30" id="TAT-5R-Q1A"/>
+                                                            <constraint firstAttribute="height" constant="110" id="k5J-j9-ds6"/>
+                                                            <constraint firstItem="QRd-OC-4wO" firstAttribute="leading" secondItem="OgI-6s-pEk" secondAttribute="trailing" constant="20" id="r4y-Ug-i68"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yra-gY-g9E">
+                                                        <rect key="frame" x="0.0" y="130" width="374" height="450"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="450" id="R0T-hf-CJH"/>
+                                                        </constraints>
+                                                        <prototypes>
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddBankAccountCell" rowHeight="418" id="mSK-3J-Fyo" customClass="AddBankAccountCell" customModule="مزهول_للذبائح" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="28" width="374" height="418"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mSK-3J-Fyo" id="nkf-YH-uLB">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="417.5"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Qen-GJ-X2U">
+                                                                            <rect key="frame" x="0.0" y="10" width="374" height="397.5"/>
+                                                                            <subviews>
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ciN-1f-KtD">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="97.5"/>
+                                                                                    <subviews>
+                                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NWI-YT-Lgq">
+                                                                                            <rect key="frame" x="0.0" y="20" width="274" height="58"/>
+                                                                                            <subviews>
+                                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="شعار البنك" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dc-BK-Rmd">
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="274" height="31"/>
+                                                                                                    <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="16"/>
+                                                                                                    <nil key="textColor"/>
+                                                                                                    <nil key="highlightedColor"/>
+                                                                                                </label>
+                                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أضف صورة شعار البنك" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUK-6f-kO3">
+                                                                                                    <rect key="frame" x="0.0" y="31" width="274" height="27"/>
+                                                                                                    <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="14"/>
+                                                                                                    <color key="textColor" name="LightText"/>
+                                                                                                    <nil key="highlightedColor"/>
+                                                                                                </label>
+                                                                                            </subviews>
+                                                                                        </stackView>
+                                                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqn-5n-toL" customClass="ViewShadow" customModule="مزهول_للذبائح" customModuleProvider="target">
+                                                                                            <rect key="frame" x="294" y="14" width="80" height="70"/>
+                                                                                            <subviews>
+                                                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CO2-VZ-Wy2">
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="70"/>
+                                                                                                    <subviews>
+                                                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_upload_img" translatesAutoresizingMaskIntoConstraints="NO" id="Ruu-1n-fBB">
+                                                                                                            <rect key="frame" x="28" y="0.0" width="24" height="49.5"/>
+                                                                                                            <userDefinedRuntimeAttributes>
+                                                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                                    <integer key="value" value="5"/>
+                                                                                                                </userDefinedRuntimeAttribute>
+                                                                                                            </userDefinedRuntimeAttributes>
+                                                                                                        </imageView>
+                                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="صورة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKj-Sd-IjC">
+                                                                                                            <rect key="frame" x="22" y="49.5" width="36.5" height="20.5"/>
+                                                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                                            <color key="textColor" name="LightText"/>
+                                                                                                            <nil key="highlightedColor"/>
+                                                                                                        </label>
+                                                                                                    </subviews>
+                                                                                                </stackView>
+                                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgC-Pr-pXt">
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="70"/>
+                                                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                    <connections>
+                                                                                                        <action selector="pickImages:" destination="wOo-dt-Jox" eventType="touchUpInside" id="RdH-g5-Mfo"/>
+                                                                                                    </connections>
+                                                                                                </button>
+                                                                                            </subviews>
+                                                                                            <color key="backgroundColor" name="AddBackground"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstItem="CO2-VZ-Wy2" firstAttribute="leading" secondItem="aqn-5n-toL" secondAttribute="leading" id="0Vj-iq-GOV"/>
+                                                                                                <constraint firstItem="YgC-Pr-pXt" firstAttribute="leading" secondItem="aqn-5n-toL" secondAttribute="leading" id="1KU-Cx-Nch"/>
+                                                                                                <constraint firstAttribute="trailing" secondItem="YgC-Pr-pXt" secondAttribute="trailing" id="3Z2-Qn-XR3"/>
+                                                                                                <constraint firstAttribute="bottom" secondItem="CO2-VZ-Wy2" secondAttribute="bottom" id="Bby-ss-d3D"/>
+                                                                                                <constraint firstAttribute="bottom" secondItem="YgC-Pr-pXt" secondAttribute="bottom" id="D5d-Oc-RHw"/>
+                                                                                                <constraint firstAttribute="width" constant="80" id="ERb-a2-sj2"/>
+                                                                                                <constraint firstAttribute="height" constant="70" id="I3w-Nz-tbP"/>
+                                                                                                <constraint firstAttribute="trailing" secondItem="CO2-VZ-Wy2" secondAttribute="trailing" id="WK0-ee-MdF"/>
+                                                                                                <constraint firstItem="YgC-Pr-pXt" firstAttribute="top" secondItem="aqn-5n-toL" secondAttribute="top" id="gqV-Ql-bWx"/>
+                                                                                                <constraint firstItem="CO2-VZ-Wy2" firstAttribute="top" secondItem="aqn-5n-toL" secondAttribute="top" id="rhP-hq-Uoc"/>
+                                                                                            </constraints>
+                                                                                            <userDefinedRuntimeAttributes>
+                                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                    <integer key="value" value="5"/>
+                                                                                                </userDefinedRuntimeAttribute>
+                                                                                            </userDefinedRuntimeAttributes>
+                                                                                        </view>
+                                                                                    </subviews>
+                                                                                </stackView>
+                                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="إسم البنك" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eTg-Fs-Rb1" customClass="TextFieldShadow" customModule="مزهول_للذبائح" customModuleProvider="target">
+                                                                                    <rect key="frame" x="0.0" y="112.5" width="374" height="60"/>
+                                                                                    <color key="backgroundColor" name="textFieldBackground"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="60" id="Dyg-xT-njj"/>
+                                                                                    </constraints>
+                                                                                    <color key="textColor" name="BoldText"/>
+                                                                                    <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="16"/>
+                                                                                    <textInputTraits key="textInputTraits"/>
+                                                                                </textField>
+                                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="إسم المستفيد" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ylv-9T-GoC" customClass="TextFieldShadow" customModule="مزهول_للذبائح" customModuleProvider="target">
+                                                                                    <rect key="frame" x="0.0" y="187.5" width="374" height="60"/>
+                                                                                    <color key="backgroundColor" name="textFieldBackground"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="60" id="mD3-aw-bIh"/>
+                                                                                    </constraints>
+                                                                                    <color key="textColor" name="BoldText"/>
+                                                                                    <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="16"/>
+                                                                                    <textInputTraits key="textInputTraits"/>
+                                                                                </textField>
+                                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="حساب رقم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m0S-cD-Ll6" customClass="TextFieldShadow" customModule="مزهول_للذبائح" customModuleProvider="target">
+                                                                                    <rect key="frame" x="0.0" y="262.5" width="374" height="60"/>
+                                                                                    <color key="backgroundColor" name="textFieldBackground"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="60" id="LXF-g0-CPa"/>
+                                                                                    </constraints>
+                                                                                    <color key="textColor" name="BoldText"/>
+                                                                                    <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="16"/>
+                                                                                    <textInputTraits key="textInputTraits"/>
+                                                                                </textField>
+                                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="أبيان" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Sx-Gw-5mh" customClass="TextFieldShadow" customModule="مزهول_للذبائح" customModuleProvider="target">
+                                                                                    <rect key="frame" x="0.0" y="337.5" width="374" height="60"/>
+                                                                                    <color key="backgroundColor" name="textFieldBackground"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="60" id="3hs-P5-muD"/>
+                                                                                    </constraints>
+                                                                                    <color key="textColor" name="BoldText"/>
+                                                                                    <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="16"/>
+                                                                                    <textInputTraits key="textInputTraits"/>
+                                                                                </textField>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqL-oV-zbA">
+                                                                            <rect key="frame" x="0.0" y="45" width="24" height="24"/>
+                                                                            <state key="normal" image="ic_remove"/>
+                                                                            <connections>
+                                                                                <action selector="DeleteItemWithSender:" destination="wOo-dt-Jox" eventType="touchUpInside" id="McK-u3-Gdc"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="Qen-GJ-X2U" firstAttribute="leading" secondItem="nkf-YH-uLB" secondAttribute="leading" id="3qF-F5-wjN"/>
+                                                                        <constraint firstItem="Qen-GJ-X2U" firstAttribute="top" secondItem="nkf-YH-uLB" secondAttribute="top" constant="10" id="B22-iD-PiC"/>
+                                                                        <constraint firstAttribute="height" secondItem="Qen-GJ-X2U" secondAttribute="height" constant="20" id="P25-cb-eYL"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="Qen-GJ-X2U" secondAttribute="trailing" id="POw-IB-YKW"/>
+                                                                        <constraint firstItem="TqL-oV-zbA" firstAttribute="top" secondItem="nkf-YH-uLB" secondAttribute="topMargin" constant="10" id="fKP-7o-RWe"/>
+                                                                        <constraint firstItem="TqL-oV-zbA" firstAttribute="leading" secondItem="nkf-YH-uLB" secondAttribute="leading" id="ood-Ul-E1p"/>
+                                                                    </constraints>
+                                                                </tableViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="Delete" destination="TqL-oV-zbA" id="S5h-Hh-xRy"/>
+                                                                    <outlet property="accountNumber" destination="m0S-cD-Ll6" id="ey9-gv-UeN"/>
+                                                                    <outlet property="editImage" destination="YgC-Pr-pXt" id="iNo-SW-k9f"/>
+                                                                    <outlet property="iban" destination="6Sx-Gw-5mh" id="YPs-Kj-mhg"/>
+                                                                    <outlet property="logo" destination="Ruu-1n-fBB" id="rig-Gb-el2"/>
+                                                                    <outlet property="logoLabel" destination="TKj-Sd-IjC" id="BEN-kU-U8Q"/>
+                                                                    <outlet property="name" destination="eTg-Fs-Rb1" id="xle-fp-jnX"/>
+                                                                    <outlet property="username" destination="Ylv-9T-GoC" id="zgA-RZ-XJC"/>
+                                                                </connections>
+                                                            </tableViewCell>
+                                                        </prototypes>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="wOo-dt-Jox" id="g4Y-Ke-bDO"/>
+                                                            <outlet property="delegate" destination="wOo-dt-Jox" id="11V-dl-uSW"/>
+                                                        </connections>
+                                                    </tableView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6R-Yc-L04">
+                                                        <rect key="frame" x="0.0" y="600" width="374" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REw-Ff-UTa" customClass="ButtonShadow" customModule="مزهول_للذبائح" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
+                                                                <color key="backgroundColor" name="green"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="Ai4-Pz-bgS"/>
+                                                                    <constraint firstAttribute="width" constant="150" id="Mxn-TY-mGt"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="17"/>
+                                                                <state key="normal" title="المزيد">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <integer key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="AddMoreWithSender:" destination="wOo-dt-Jox" eventType="touchUpInside" id="dM7-ds-PVH"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="REw-Ff-UTa" firstAttribute="leading" secondItem="U6R-Yc-L04" secondAttribute="leading" id="KZA-o7-CcQ"/>
+                                                            <constraint firstAttribute="height" constant="60" id="af2-DD-IV3"/>
+                                                            <constraint firstItem="REw-Ff-UTa" firstAttribute="centerY" secondItem="U6R-Yc-L04" secondAttribute="centerY" id="kXB-Wk-2Y7"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="dxk-EH-NQw" firstAttribute="top" secondItem="jbo-en-nGW" secondAttribute="top" constant="20" id="8dM-dE-OcI"/>
+                                            <constraint firstAttribute="trailing" secondItem="dxk-EH-NQw" secondAttribute="trailing" constant="20" id="ADC-gq-dQu"/>
+                                            <constraint firstItem="dxk-EH-NQw" firstAttribute="leading" secondItem="jbo-en-nGW" secondAttribute="leading" constant="20" id="a5Y-kH-ZaH"/>
+                                            <constraint firstAttribute="height" secondItem="dxk-EH-NQw" secondAttribute="height" constant="40" id="fhS-r1-IDx"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jbo-en-nGW" firstAttribute="leading" secondItem="TU6-YQ-jFK" secondAttribute="leading" id="OpP-wE-I6z"/>
+                                    <constraint firstItem="jbo-en-nGW" firstAttribute="top" secondItem="TU6-YQ-jFK" secondAttribute="top" id="iFg-jX-Nsd"/>
+                                    <constraint firstAttribute="trailing" secondItem="jbo-en-nGW" secondAttribute="trailing" id="ioz-fc-hAB"/>
+                                    <constraint firstItem="jbo-en-nGW" firstAttribute="width" secondItem="TU6-YQ-jFK" secondAttribute="width" id="noY-mQ-EEE"/>
+                                    <constraint firstAttribute="bottom" secondItem="jbo-en-nGW" secondAttribute="bottom" id="ymQ-dx-Buf"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh7-id-E8i">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <color key="backgroundColor" name="green"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cFA-eO-5ZZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="20"/>
+                                <state key="normal" title="حفظ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="AddNewBankAccounts:" destination="wOo-dt-Jox" eventType="touchUpInside" id="vDl-EY-QBz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TU6-YQ-jFK" firstAttribute="leading" secondItem="eKJ-gM-hOk" secondAttribute="leading" id="1KY-P7-DNc"/>
+                            <constraint firstItem="1x9-7G-1RG" firstAttribute="trailing" secondItem="sh7-id-E8i" secondAttribute="trailing" id="KXz-Ts-xw8"/>
+                            <constraint firstItem="1x9-7G-1RG" firstAttribute="bottom" secondItem="sh7-id-E8i" secondAttribute="bottom" id="LDl-Yj-9dR"/>
+                            <constraint firstItem="sh7-id-E8i" firstAttribute="leading" secondItem="1x9-7G-1RG" secondAttribute="leading" id="Nz2-nC-zqT"/>
+                            <constraint firstItem="sh7-id-E8i" firstAttribute="top" secondItem="TU6-YQ-jFK" secondAttribute="bottom" id="Wwt-TW-ZGO"/>
+                            <constraint firstItem="TU6-YQ-jFK" firstAttribute="top" secondItem="1x9-7G-1RG" secondAttribute="top" id="ugZ-Wd-PYN"/>
+                            <constraint firstAttribute="trailing" secondItem="TU6-YQ-jFK" secondAttribute="trailing" id="w43-jF-dsF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1x9-7G-1RG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4lQ-yp-7lP"/>
+                    <connections>
+                        <outlet property="MoreButton" destination="REw-Ff-UTa" id="T4I-M8-hWX"/>
+                        <outlet property="tableHeight" destination="R0T-hf-CJH" id="SPh-y1-cD8"/>
+                        <outlet property="tableView" destination="Yra-gY-g9E" id="CwX-q8-pGi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xRE-q4-goa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.97101449275374" y="20.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cHI-cm-ZuD">
+            <objects>
+                <navigationController storyboardIdentifier="AddBankAccounts" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3BP-bi-iWo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xjz-Wj-IfP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wOo-dt-Jox" kind="relationship" relationship="rootViewController" id="BIh-u4-ctA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vnZ-gO-5Kr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_alert" width="24" height="24"/>
+        <image name="ic_remove" width="24" height="24"/>
+        <image name="ic_upload_img" width="24" height="24"/>
+        <namedColor name="AddBackground">
+            <color red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BoldText">
+            <color red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightText">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green">
+            <color red="0.10196078431372549" green="0.66666666666666663" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pale yellow">
+            <color red="1" green="0.97647058823529409" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textFieldBackground">
+            <color red="0.89399999380111694" green="0.89399999380111694" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

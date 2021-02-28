@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Kv-yN-WEV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidKufi-Regular.ttf">
+            <string>DroidArabicKufi</string>
+        </array>
+        <array key="DroidNaskh-Bold.ttf">
+            <string>DroidArabicNaskh-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--  إدارة التطبيق-->
+        <scene sceneID="7Ji-W0-AtX">
+            <objects>
+                <viewController id="aAD-Dw-pXH" customClass="LoginViewController" customModule="fruitsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cgH-qd-QPk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASd-Ty-P7D">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_login" translatesAutoresizingMaskIntoConstraints="NO" id="Ojf-ML-HoC">
+                                        <rect key="frame" x="167" y="100" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Scy-mP-z2r"/>
+                                            <constraint firstAttribute="height" constant="80" id="WDP-7p-V3u"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تسجيل دخول إدارة التطبيق" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZv-gS-jkc">
+                                        <rect key="frame" x="137" y="195" width="140.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="15"/>
+                                        <color key="textColor" name="BoldText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="الأسم" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DG0-b3-1f1" customClass="TextFieldShadow" customModule="fruitsApp" customModuleProvider="target">
+                                        <rect key="frame" x="67" y="312.5" width="280" height="50"/>
+                                        <color key="backgroundColor" name="AddBackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="VD7-IG-zK0"/>
+                                            <constraint firstAttribute="height" constant="50" id="scj-ba-S3E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="tel"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="كلمة المرور" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ivu-tG-20d" customClass="TextFieldShadow" customModule="fruitsApp" customModuleProvider="target">
+                                        <rect key="frame" x="67" y="382.5" width="280" height="50"/>
+                                        <color key="backgroundColor" name="AddBackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ofv-Hc-ccP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oV-UD-Lrs" customClass="ButtonShadow" customModule="fruitsApp" customModuleProvider="target">
+                                        <rect key="frame" x="67" y="532.5" width="280" height="50"/>
+                                        <color key="backgroundColor" name="green"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0ol-dZ-Lhy"/>
+                                            <constraint firstAttribute="width" constant="280" id="Dd4-H1-DZE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="16"/>
+                                        <state key="normal" title="تسجيل الدخول">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="log:" destination="aAD-Dw-pXH" eventType="touchUpInside" id="C6v-UU-xKQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozI-NW-IN7">
+                                        <rect key="frame" x="327" y="462.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="2MP-gE-BaT"/>
+                                            <constraint firstAttribute="height" constant="20" id="evn-N4-4Ba"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_check_box_checked">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="check:" destination="aAD-Dw-pXH" eventType="touchUpInside" id="TQv-I5-pzp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gb-iF-5Ge">
+                                        <rect key="frame" x="284" y="458" width="35" height="29"/>
+                                        <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="14"/>
+                                        <state key="normal" title="تذكرني">
+                                            <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DG0-b3-1f1" firstAttribute="top" secondItem="JZv-gS-jkc" secondAttribute="bottom" constant="100" id="F5B-s2-oTT"/>
+                                    <constraint firstItem="ivu-tG-20d" firstAttribute="width" secondItem="DG0-b3-1f1" secondAttribute="width" id="U45-zv-mbm"/>
+                                    <constraint firstItem="Ojf-ML-HoC" firstAttribute="centerX" secondItem="ASd-Ty-P7D" secondAttribute="centerX" id="V6e-Ht-m5r"/>
+                                    <constraint firstItem="DG0-b3-1f1" firstAttribute="centerX" secondItem="ASd-Ty-P7D" secondAttribute="centerX" id="Wtz-ZR-d2f"/>
+                                    <constraint firstItem="JZv-gS-jkc" firstAttribute="top" secondItem="Ojf-ML-HoC" secondAttribute="bottom" constant="15" id="Xbq-wf-uaP"/>
+                                    <constraint firstItem="ivu-tG-20d" firstAttribute="centerX" secondItem="ASd-Ty-P7D" secondAttribute="centerX" id="Yyw-DI-Y6i"/>
+                                    <constraint firstItem="ivu-tG-20d" firstAttribute="top" secondItem="DG0-b3-1f1" secondAttribute="bottom" constant="20" id="Z6n-HQ-k3A"/>
+                                    <constraint firstItem="JZv-gS-jkc" firstAttribute="centerX" secondItem="ASd-Ty-P7D" secondAttribute="centerX" id="ZxG-zr-mhJ"/>
+                                    <constraint firstItem="ozI-NW-IN7" firstAttribute="leading" secondItem="3gb-iF-5Ge" secondAttribute="trailing" constant="8" id="nBL-WY-Uod"/>
+                                    <constraint firstItem="1oV-UD-Lrs" firstAttribute="centerX" secondItem="ASd-Ty-P7D" secondAttribute="centerX" id="nnd-PR-A2T"/>
+                                    <constraint firstItem="Ojf-ML-HoC" firstAttribute="top" secondItem="ASd-Ty-P7D" secondAttribute="top" constant="100" id="pdM-Zb-4Po"/>
+                                    <constraint firstItem="ozI-NW-IN7" firstAttribute="top" secondItem="ivu-tG-20d" secondAttribute="bottom" constant="30" id="rGu-Fw-Hg7"/>
+                                    <constraint firstItem="1oV-UD-Lrs" firstAttribute="top" secondItem="ozI-NW-IN7" secondAttribute="bottom" constant="50" id="s2h-hD-bNK"/>
+                                    <constraint firstItem="ozI-NW-IN7" firstAttribute="trailing" secondItem="ivu-tG-20d" secondAttribute="trailing" id="snI-2y-sYU"/>
+                                    <constraint firstItem="3gb-iF-5Ge" firstAttribute="centerY" secondItem="ozI-NW-IN7" secondAttribute="centerY" id="wVD-oj-loh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jBE-CF-5JT"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ASd-Ty-P7D" firstAttribute="leading" secondItem="jBE-CF-5JT" secondAttribute="leading" id="36W-RV-6DC"/>
+                            <constraint firstItem="ASd-Ty-P7D" firstAttribute="trailing" secondItem="jBE-CF-5JT" secondAttribute="trailing" id="4yp-jl-92s"/>
+                            <constraint firstItem="ASd-Ty-P7D" firstAttribute="top" secondItem="jBE-CF-5JT" secondAttribute="top" id="6vD-Th-mbS"/>
+                            <constraint firstItem="jBE-CF-5JT" firstAttribute="bottom" secondItem="ASd-Ty-P7D" secondAttribute="bottom" id="YoJ-td-3aN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="  إدارة التطبيق" id="hqb-aJ-cve"/>
+                    <connections>
+                        <outlet property="password" destination="ivu-tG-20d" id="Eev-j7-KVb"/>
+                        <outlet property="userName" destination="DG0-b3-1f1" id="RGa-9a-LTE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nfK-nc-meW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1123.1884057971015" y="126.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CQi-jQ-Ogu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Kv-yN-WEV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oRu-HA-nnX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aAD-Dw-pXH" kind="relationship" relationship="rootViewController" id="06j-ap-LRO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="42b-4e-8vy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213.04347826086959" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_check_box_checked" width="18" height="18"/>
+        <image name="ic_login" width="100" height="100"/>
+        <namedColor name="AddBackground">
+            <color red="0.94509803921568625" green="0.94901960784313721" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BoldText">
+            <color red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green">
+            <color red="0.10980392156862745" green="0.66666666666666663" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

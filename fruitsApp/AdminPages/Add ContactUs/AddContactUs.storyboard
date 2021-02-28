@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidNaskh-Bold.ttf">
+            <string>DroidArabicNaskh-Bold</string>
+        </array>
+        <array key="DroidNaskh-Regular.ttf">
+            <string>DroidArabicNaskh</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--إضافة وسائل الإتصال-->
+        <scene sceneID="0Ag-7t-mjv">
+            <objects>
+                <viewController title="إضافة وسائل الإتصال" id="3mt-Pn-PX2" customClass="AddContactUs" customModule="مزهول_للذبائح" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4fx-kG-hRS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ep-eO-6dA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zu1-2w-zS3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXn-8q-7zF" customClass="GMSMapView">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="350" id="2gc-QA-ZHJ"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5hV-nO-qaz">
+                                                <rect key="frame" x="20" y="370" width="374" height="220"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="العنوان" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v4J-ew-rva" customClass="TextFieldShadow" customModule="مزهول_للذبائح" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                                        <color key="backgroundColor" name="textFieldBackground"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="kzO-et-2iT"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رقم الهاتف" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qxY-q1-jJS" customClass="TextFieldShadow" customModule="مزهول_للذبائح" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="80" width="374" height="60"/>
+                                                        <color key="backgroundColor" name="textFieldBackground"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="w9Z-1t-S1B"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رقم الواتساب" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pMx-rK-uvw" customClass="TextFieldShadow" customModule="مزهول_للذبائح" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="160" width="374" height="60"/>
+                                                        <color key="backgroundColor" name="textFieldBackground"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="Jrg-Wb-1g9"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="xXn-8q-7zF" firstAttribute="leading" secondItem="zu1-2w-zS3" secondAttribute="leading" id="GkN-86-tIt"/>
+                                            <constraint firstItem="5hV-nO-qaz" firstAttribute="leading" secondItem="zu1-2w-zS3" secondAttribute="leading" constant="20" id="MAc-YR-mdp"/>
+                                            <constraint firstAttribute="trailing" secondItem="xXn-8q-7zF" secondAttribute="trailing" id="Oel-fD-qAS"/>
+                                            <constraint firstItem="xXn-8q-7zF" firstAttribute="top" secondItem="zu1-2w-zS3" secondAttribute="top" id="TdG-6c-A8N"/>
+                                            <constraint firstItem="5hV-nO-qaz" firstAttribute="top" secondItem="xXn-8q-7zF" secondAttribute="bottom" constant="20" id="Y0f-dO-UKv"/>
+                                            <constraint firstAttribute="trailing" secondItem="5hV-nO-qaz" secondAttribute="trailing" constant="20" id="cOm-HB-mbO"/>
+                                            <constraint firstAttribute="height" secondItem="5hV-nO-qaz" secondAttribute="height" constant="400" id="whY-OD-z3q"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zu1-2w-zS3" secondAttribute="trailing" id="6Mu-mf-Bl9"/>
+                                    <constraint firstItem="zu1-2w-zS3" firstAttribute="width" secondItem="7ep-eO-6dA" secondAttribute="width" id="D6C-Qw-faR"/>
+                                    <constraint firstAttribute="bottom" secondItem="zu1-2w-zS3" secondAttribute="bottom" id="ViT-9d-cwh"/>
+                                    <constraint firstItem="zu1-2w-zS3" firstAttribute="leading" secondItem="7ep-eO-6dA" secondAttribute="leading" id="YS7-n1-Plw"/>
+                                    <constraint firstItem="zu1-2w-zS3" firstAttribute="top" secondItem="7ep-eO-6dA" secondAttribute="top" id="k2J-L7-M9I"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2X-cp-fc8" customClass="ButtonShadow" customModule="مزهول_للذبائح" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <color key="backgroundColor" name="green"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="knV-DN-c5P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="18"/>
+                                <state key="normal" title="حفظ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SaveWithSender:" destination="3mt-Pn-PX2" eventType="touchUpInside" id="9Ft-cz-V0W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7ep-eO-6dA" secondAttribute="trailing" id="9RY-wu-RoG"/>
+                            <constraint firstItem="mTw-GY-wwg" firstAttribute="bottom" secondItem="F2X-cp-fc8" secondAttribute="bottom" id="Bkc-Ct-3yf"/>
+                            <constraint firstItem="7ep-eO-6dA" firstAttribute="leading" secondItem="4fx-kG-hRS" secondAttribute="leading" id="cd2-cM-T8Z"/>
+                            <constraint firstItem="F2X-cp-fc8" firstAttribute="top" secondItem="7ep-eO-6dA" secondAttribute="bottom" id="cjc-5r-IGj"/>
+                            <constraint firstItem="7ep-eO-6dA" firstAttribute="top" secondItem="mTw-GY-wwg" secondAttribute="top" id="oeI-bE-pBZ"/>
+                            <constraint firstItem="mTw-GY-wwg" firstAttribute="trailing" secondItem="F2X-cp-fc8" secondAttribute="trailing" id="vro-fu-FWK"/>
+                            <constraint firstItem="F2X-cp-fc8" firstAttribute="leading" secondItem="mTw-GY-wwg" secondAttribute="leading" id="zrp-TS-gqG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mTw-GY-wwg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oiv-47-k7k"/>
+                    <connections>
+                        <outlet property="address" destination="v4J-ew-rva" id="SqW-b5-nmw"/>
+                        <outlet property="mapView" destination="xXn-8q-7zF" id="mv7-n9-eXR"/>
+                        <outlet property="phone" destination="qxY-q1-jJS" id="tOj-fi-3UG"/>
+                        <outlet property="whatsapp" destination="pMx-rK-uvw" id="Mx3-vu-ybn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CdQ-dc-Ieg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.86956521739137" y="20.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T1Z-zf-KOs">
+            <objects>
+                <navigationController storyboardIdentifier="AddContactUs" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mGb-bD-WO3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bh3-sw-T3U">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3mt-Pn-PX2" kind="relationship" relationship="rootViewController" id="h3n-CA-5WM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhp-pc-iOm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214" y="21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="green">
+            <color red="0.10196078431372549" green="0.66666666666666663" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textFieldBackground">
+            <color red="0.89399999380111694" green="0.89399999380111694" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

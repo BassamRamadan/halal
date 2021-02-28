@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J4d-n3-wW5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Pages Controller-->
+        <scene sceneID="iF9-E5-TC3">
+            <objects>
+                <tabBarController storyboardIdentifier="UserPagesTaB" useStoryboardIdentifierAsRestorationIdentifier="YES" id="J4d-n3-wW5" customClass="UserPagesController" customModule="fruitsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" insetsLayoutMarginsFromSafeArea="NO" id="N3i-kZ-O6j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="LightText"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RRm-TX-F1K" kind="relationship" relationship="viewControllers" id="z9l-nG-o37"/>
+                        <segue destination="X6Z-mE-WQb" kind="relationship" relationship="viewControllers" id="TJp-x5-7xT"/>
+                        <segue destination="O1D-kZ-WoX" kind="relationship" relationship="viewControllers" id="Z1Q-3l-cYw"/>
+                        <segue destination="CnY-gh-teW" kind="relationship" relationship="viewControllers" id="ZNG-gn-BZd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NS9-TR-rfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="-285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="onC-hq-rNO">
+            <objects>
+                <navigationController id="RRm-TX-F1K" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ic_sheep" selectedImage="ic_sheep_active" id="nTV-uF-pnV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DgI-9Q-DLC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Szi-B8-sDS" kind="relationship" relationship="rootViewController" id="BMg-rb-r3w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZi-v7-40o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2452" y="563"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5E2-Qc-7Yu">
+            <objects>
+                <navigationController id="X6Z-mE-WQb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ic_bank_account" selectedImage="ic_bank_account_active" id="doz-f3-OK2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zn8-eS-MxV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SI5-zC-uTX" kind="relationship" relationship="rootViewController" id="rIq-Zf-zyZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBG-rd-8He" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="563"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u44-aS-30t">
+            <objects>
+                <navigationController id="O1D-kZ-WoX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ic_sale_way" selectedImage="ic_sale_way_active" id="Apk-Ud-90Y"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jcx-As-hH4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Aeu-Pg-aaP" kind="relationship" relationship="rootViewController" id="oIo-dA-bvs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hr2-5V-g1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-86" y="563"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YyZ-XU-V89">
+            <objects>
+                <navigationController id="CnY-gh-teW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ic_call" selectedImage="ic_call_active" id="jgu-eF-K4I"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LdT-sQ-OQU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="c3v-6Q-KJ0" kind="relationship" relationship="rootViewController" id="9y6-n8-VcG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A62-vc-S7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1175" y="563"/>
+        </scene>
+        <!--sacrifices-->
+        <scene sceneID="cTV-ob-RnA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="sacrifices" referencedIdentifier="sacrifices" id="Szi-B8-sDS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HQd-N7-Tab"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F4I-H4-X5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2451" y="1126"/>
+        </scene>
+        <!--BankAccounts-->
+        <scene sceneID="TQQ-OC-wA9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BankAccounts" id="SI5-zC-uTX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="e89-UQ-4TX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3b-iW-Rxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="1126"/>
+        </scene>
+        <!--AboutUs-->
+        <scene sceneID="FQS-mI-Gmd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AboutUs" referencedIdentifier="AboutUs" id="Aeu-Pg-aaP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dKm-1p-cfB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cr3-Vw-a5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-86" y="1126"/>
+        </scene>
+        <!--ContactUs-->
+        <scene sceneID="emz-Cn-6no">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ContactUs" id="c3v-6Q-KJ0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Mxc-vX-m3i"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WmR-Y2-3V5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1175" y="1126"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_bank_account" width="24" height="24"/>
+        <image name="ic_bank_account_active" width="24" height="24"/>
+        <image name="ic_call" width="24" height="24"/>
+        <image name="ic_call_active" width="24" height="24"/>
+        <image name="ic_sale_way" width="24" height="24"/>
+        <image name="ic_sale_way_active" width="24" height="24"/>
+        <image name="ic_sheep" width="25" height="24"/>
+        <image name="ic_sheep_active" width="25" height="24"/>
+        <namedColor name="LightText">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
